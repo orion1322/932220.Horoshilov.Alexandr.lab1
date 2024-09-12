@@ -1,0 +1,129 @@
+* {
+    margin: 0px;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    font-family:'Courier New', Courier, monospace;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    padding: 30px;
+    background-color: blue;
+    color: rgb(255, 255, 255);
+    width: 500px;
+    height: 600px;
+}
+
+.content-container, .link, .list-container, .flex-container {
+    margin-bottom: 15px;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+h2, h3, li {
+    margin-bottom: 13px;
+}
+
+.figure {
+    width: 110px;
+    height: 110px;
+    border: 5px solid #ffffff;
+    border-radius: 20px 0px 20px 0px;
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 25px;
+}
+
+.link {
+    text-align: center;
+    margin-top: -5px;
+}
+
+a {
+    color: rgb(255, 0, 0);
+}
+
+a:visited {
+    color: #ff0000;
+}
+
+span {
+    color:rgb(255, 0, 0);
+}
+
+.list-container ul li:nth-child(2) {
+    letter-spacing: 4px;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.flex-list-container ul li{
+    list-style-type: none;
+    margin-left: -40px;
+}
+
+.flex-container .flex-list-container ul li:last-child {
+    list-style-type: none;
+    margin-top: 22px;
+}
+
+.right-col {
+    display: flex;
+    flex-direction: column;
+    width: 150px;
+}
+
+.grid-box {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.item {
+    border: 5px double;
+    border-color: rgba(255, 255, 255, 0.5);
+    padding: 4px;
+    text-align: center;
+    line-height: 23px;
+    align-content: end;
+}
+
+.item:first-child {
+    background: #009900;
+    grid-row-start: 1; 
+    grid-row-end: 3; 
+}
+
+.item:last-child {
+    background-color: rgb(255, 0, 0);
+    grid-column-start: 2; 
+    grid-column-end: 4; 
+}
+
+.right-col img {
+    margin-top: 10px;
+    align-self: flex-end;
+}
+
+header, footer {
+    background-color: #009900;
+    height: 40px;
+    font-size: 18px;
+    text-align: center;
+    line-height: 40px;
+    color: rgb(255, 255, 255);
+}
+
